@@ -1,0 +1,2 @@
+INSERT INTO tb_AGENDACONTATOS_CLIENTES(Nome, Telefone, CPF, Email, Anotação, Data_Atual, Hora_Contato) VALUES ('Rafael', 47999327137, '016.364.389-03', 'rafaelraizer76@gmail.com', 'Sucesso! Cliente gostou do atendimento.', '10/05/2022', '09:58');
+INSERT INTO tb_AGENDACONTATOS_CLIENTES(Nome, Telefone, CPF, Email, Anotação, Data_Atual, Hora_Contato) VALUES ('Márcia', 47999991010, '021.358.111-72', '', 'Cliente não pode atender, pediu para retornar.', '10/05/2022', '10:20');                                                  

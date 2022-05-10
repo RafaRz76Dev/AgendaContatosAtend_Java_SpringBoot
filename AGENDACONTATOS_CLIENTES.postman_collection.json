@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "f76ef563-144d-42c9-bee5-76d3ed34dc48",
+		"name": "AGENDACONTATOS_CLIENTES",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Deletar Contato da Agenda",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 4,\r\n    \"data_Atual\": \"10/05/2022\",\r\n    \"cpf\": \"011.256.388-01\",\r\n    \"nome\": \"Alvaro Raizer\",\r\n    \"anotação\": \"Cliente atendeu e pediu para deletar.\",\r\n    \"telefone\": \"49999830037\",\r\n    \"hora_Contato\": \"14:45\",\r\n    \"email\": \"alvaro.raizer@bol.com.br\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/agendacontatos"
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar Agenda Contatos",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n     \"id\": 2,\r\n    \"cpf\": \"021.358.111-72\",\r\n    \"data_Atual\": \"10/05/2022\",\r\n    \"hora_Contato\": \"14:40\",\r\n    \"telefone\": \"4799915151010\",\r\n    \"anotação\": \"Cliente atendeu por email e passou o novo contato.\",\r\n    \"email\": \"marcinha_M@hotmail.com\",\r\n    \"nome\": \"Márcia Raizer\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/agendacontatos"
+			},
+			"response": []
+		},
+		{
+			"name": "Inserir novo Contato",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cpf\": \"081.476.111-01\",\r\n    \"anotação\": \"Cliente atendeu e disse que sente-se importante quando alguém entra em contato.\",\r\n    \"telefone\": \"49999830037\",\r\n    \"nome\": \"Mirian Goulart\",\r\n    \"data_Atual\": \"10/05/2022\",\r\n    \"hora_Contato\": \"14:34\",\r\n    \"email\": \"mirinhagoul@hotmail.com.\"\r\n}\r\n\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/agendacontatos"
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Agenda Contatos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/agendacontatos"
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Contatos por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/agendacontatos/1"
+			},
+			"response": []
+		}
+	]
+}
