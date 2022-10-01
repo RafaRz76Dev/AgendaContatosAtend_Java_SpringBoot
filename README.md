@@ -6,9 +6,11 @@
 
 ✅Java11;
 
-✅Framework Spring Boot e Maven;
+✅Framework Spring Boot e Spring Data JPA;
 
-✅Spring Data JPA com banco H2;
+✅Dependência Maven;
+
+✅ Banco de Dados H2;
 
 ✅Testes de Requisições de API com a ferramenta Postman;
 
